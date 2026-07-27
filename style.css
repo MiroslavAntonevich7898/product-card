@@ -3,6 +3,8 @@
   font-size: 16px;
   line-height: 24px;
   color: #515076;
+  margin: 0;
+  padding: 20px;
 }
 
 .title {
@@ -30,7 +32,7 @@
   color: #a5a3b9;
 }
 
-.product_name {
+.product__name {
   font-weight: 700;
   font-size: 25px;
   line-height: 27px;
@@ -42,10 +44,6 @@ ul {
   padding-left: 15px;
 }
 
-b {
-  padding-bottom: px;
-}
-
 .button {
   padding: 8px 18px;
   font-size: 18px;
@@ -53,6 +51,7 @@ b {
   color: #fff;
   background-color: #515076;
   border-radius: 35px;
+  border: none;
 }
 
 .price__container {
