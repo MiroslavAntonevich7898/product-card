@@ -1,1 +1,1 @@
-# Product-card
+# Product-catalog
