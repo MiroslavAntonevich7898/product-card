@@ -1,0 +1,8 @@
+.card__compound {
+  font-size: 13px;
+}
+
+.card__compound-list {
+list-style-type: circle;
+font-size: 13px;
+}
