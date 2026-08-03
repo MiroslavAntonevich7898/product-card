@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.product-catalog {
+  font-family: "Montserrat", sans-serif;
+  color: #515076;
+  width: 1280px;
+  height: 1715px;
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    background-image: url("../img/background/background-dandelion_1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 1px;
+}
+
+.product-catalog__title {
+  width: 846px;
+  height: 78px;
+  top: 220px;
+  left: 217px;
+  font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 70px;
+line-height: 78px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+margin-top: 220px;
+margin-bottom: 110px;
+}
+
+.product-catalog__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  
+}
+
+.card__img {
+  width: 290px;
+  height: 245px;
+  top: 433px;
+  left: 110px;
+  opacity: 1;
+}
+
+.card {
+  width: 340px;
+  height: 573px;
+  top: 408px;
+  left: 85px;
+  opacity: 1;
+  background-color: #5150761a;
+  padding: 25px;
+}
+
+
+.card__description {
+  margin-bottom: 25px;
+}
+
+.card__properties {
+  color: #A5A3B9;
+  margin-bottom: 5px;
+}
+
+.card__title {
+  margin-bottom: 5px;
+}
+
+.card_text-description {
+  font-size: 20px;
+}
+
+
+.card__compound-list {
+  list-style-type: circle;
+  padding-left: 15px;
+}
+
+.card__compound {
+  margin-bottom: 40px;
+}
+
+.card__compound_5 {
+  margin-bottom: 25px;
+}
+
+.card__price {
+display:flex;
+justify-content: space-between;
+}
