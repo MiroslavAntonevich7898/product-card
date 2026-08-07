@@ -25,7 +25,6 @@
   background-position: 0 0;
   background-size: 790px 697px;
   background-position: 105px 0;
-  padding-top: 220px;
 }
 
 .product-catalog__title {
@@ -35,7 +34,7 @@
   line-height: 78px;
   text-align: center;
   vertical-align: middle;
-  margin-top: 0px;
+  padding-top: 220px;
   margin-bottom: 110px;
 }
 
@@ -53,20 +52,16 @@
 .card__img {
   width: 290px;
   height: 245px;
-  top: 433px;
-  left: 110px;
-  opacity: 1;
   margin-bottom: 30px;
 }
 
 .card {
   width: 340px;
   height: 573px;
-  top: 408px;
-  left: 85px;
-  opacity: 1;
   background-color: #5150761a;
   padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__description {
