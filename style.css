@@ -108,3 +108,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.button_container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  border-width: 3px;
+  background-color: whitesmoke;
+  color: rgb(7, 133, 108);
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 25px;
+  width: 200px;
+  height: 120px;
+  margin-bottom: 50px;
+
+}
