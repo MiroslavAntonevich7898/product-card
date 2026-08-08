@@ -66,7 +66,12 @@
   left: 85px;
   opacity: 1;
   background-color: #5150761a;
+  transition: background-color 0.5s ease-out;
   padding: 25px;
+}
+
+.card.active {
+  background-color: #79e8c3;
 }
 
 .card__description {

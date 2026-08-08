@@ -12,8 +12,8 @@
       <h1 class="product-catalog__title">Выбери свой продукт</h1>
 
       <div class="button_container">
-      <button class="button">Изменить цвет 1 карточки</button>
-      <button class="button">Изменить цвет всех карточек</button>
+      <button class="button" id="repaint-first-card">Изменить цвет 1 карточки</button>
+      <button class="button" id="repaint-cards">Изменить цвет всех карточек</button>
       <button class="button">Открыть  google</button>
       <button class="button">Всплывающее окно</button>
       <button class="button">Изменить цвет кнопки</button>
@@ -23,7 +23,7 @@
 
       <div class="product-catalog__container">
         <!-- Карточка 1 -->
-        <article class="card">
+        <article class="card" id="first-card">
           <div class="card__img-wrapper">
             <img
               class="card__img"
@@ -174,5 +174,6 @@
         </article>
       </div>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
