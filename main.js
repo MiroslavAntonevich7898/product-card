@@ -23,11 +23,10 @@ console.log("#first-card", firstCard);
 const repaintBackgroundcolorButton = document.querySelector(
   "#repaint-backgroundcolor-button",
 );
+const activated = (element) => element.classList.toggle("active");
 
 repaintBackgroundcolorButton.addEventListener("click", (event) => {
-  const Activated = event.target.classList.toggle("active");
-
-  if (Activated) {
+  if (activated(event.target)) {
     event.target.style.backgroundColor = "blue";
   } else {
     event.target.style.backgroundColor = "red";
