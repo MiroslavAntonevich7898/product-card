@@ -2,7 +2,7 @@ const repaintCardsButton = document.getElementById("repaint-cards-button");
 const cards = document.querySelectorAll(".card");
 
 repaintCardsButton.addEventListener("click", () =>
-  cards.forEach((card) => card.classList.toggle("active")),
+  cards.forEach((card) => card.classList.toggle("change-color")),
 );
 
 console.log("repaintCardsButton", repaintCardsButton);
@@ -14,7 +14,7 @@ const repaintFirstCardButton = document.getElementById(
 const firstCard = document.querySelector("#first-card");
 
 repaintFirstCardButton.addEventListener("click", () => {
-  firstCard.style.backgroundColor = "green";
+  firstCard.classList.toggle("change-color")
 });
 
 console.log("repaint-first-card-button", repaintFirstCardButton);
