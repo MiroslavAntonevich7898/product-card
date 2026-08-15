@@ -65,7 +65,7 @@
   flex-direction: column;
 }
 
-.card.active {
+.card.change-color {
   background-color: #79e8c3;
 }
 
@@ -125,5 +125,4 @@
   width: 200px;
   height: 120px;
   margin-bottom: 50px;
-
 }
