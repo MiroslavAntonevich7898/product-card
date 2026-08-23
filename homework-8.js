@@ -14,7 +14,7 @@ const userMiroslav = {
 
 console.log(userMiroslav);
 
-// Задание 4
+// Задание 4 
 const userCar = {
     makeCar: "Lexus",
     modelCar: "IS F",
@@ -24,9 +24,32 @@ const userCar = {
 };
 
 userCar.carOwner = userMiroslav;
-console.log(userCar);
 
 // Задание 5
+function getMaxSpeed(userCar) {
+    if ("maxSpeed" in userCar) {
+        return;
+    } else {
+        userCar.maxSpeed = 300;
+    }
+}
+
+getMaxSpeed(userCar);
+console.log(userCar);
+
+// Задание 6
+function showUserCarInfo(userCar) {
+    console.log(Object.values(userCar));
+}
+
+showUserCarInfo(userCar);
+
+/* еслинужно передать одно значение то пишем так
+function showUserCarInfo(userCar, maxSpeed) {
+    console.log(userCar[maxSpeed]);
+}
+
+showUserCarInfo(userCar, "maxSpeed");*/
 
 // Задание 7
 const Top10SngGrapplers = [
@@ -37,7 +60,7 @@ const Top10SngGrapplers = [
     "Роман Долидзе",
     "Николай Ветров",
     "Магомед Джарбаев",
-    "Абу Гуданатов ",
+    "Абу Гуданатов",
     "Бекзат Капашов",
     "Мажид Курахов",
 ];
@@ -48,42 +71,42 @@ console.log(Top10SngGrapplers);
 
 const CowboyBebop = {
     title: "Ковбой Бибоп",
-    release: "1998",
+    release: 1998,
     author: "Хадзимэ Ятатэ",
     genre: "Экшен / Космический нуар",
 };
 
 const HajimeNoIppo = {
     title: "Первый шаг",
-    release: "2000 – 2014",
+    release: 2000,
     author: "Джордж Морикава",
     genre: "Экшен / Драма",
 };
 
 const InitialD = {
     title: "Инициал Ди",
-    release: "1998 – 2014",
+    release: 1998,
     author: "Сюити Сигэно",
     genre: "Экшен / Автогонки",
 };
 
 const NeonGenesisEvangelion = {
     title: "Евангелион",
-    release: "1995 – 1997",
+    release: 1995,
     author: "Хидэаки Анно",
     genre: "Психологическая Драма",
 };
 
 const AshitanoJoe = {
     title: "Завтрашний Джо",
-    release: "1970 – 1981",
+    release: 1970,
     author: "Икки Кадзивара",
     genre: "Суровая Драма",
 };
 
 const Berserk = {
     title: "Берсерк",
-    release: "1997",
+    release: 1997,
     author: "Кэнтаро Миура",
     genre: "Экшен / Драма / Дарк-фэнтези",
 };
@@ -101,28 +124,28 @@ console.log(OldAnimelist);
 // Задание 9
 const SuzumeNoTojimari = {
     title: "Судзумэ, закрывающая двери",
-    release: "2022",
+    release: 2022,
     author: "Макото Синкай",
     genre: "Приключения / Драма / Фэнтези",
 };
 
 const TunnelToSummerTheExitOfGoodbyes = {
     title: "Туннель в лето, выход прощаний",
-    release: "2022",
+    release: 2022,
     author: "Мэй Хатимоку",
     genre: "Романтическая Драма / Фантастика",
 };
 
 const YourName = {
     title: "Твоё имя",
-    release: "2016",
+    release: 2016,
     author: "Макото Синкай",
     genre: "Романтическая Драма / Фантастика",
 };
 
 const TheGardenOfWords = {
     title: "Сад изящных слов",
-    release: "2013",
+    release: 2013,
     author: "Макото Синкай",
     genre: "Романтическая Драма / Повседневность",
 };
@@ -139,3 +162,11 @@ const finalAnimeList = [...OldAnimelist, ...AnimeListAfter2010];
 console.log(finalAnimeList);
 
 // Задание 10
+function addRarity(finalAnimeList) {
+    finalAnimeList.map((anime) => {
+        anime.isRare = anime.release < 2000;
+        return anime;
+    });
+}
+
+addRarity(finalAnimeList);
