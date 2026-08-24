@@ -14,7 +14,7 @@ const userMiroslav = {
 
 console.log(userMiroslav);
 
-// Задание 4 
+// Задание 4
 const userCar = {
     makeCar: "Lexus",
     modelCar: "IS F",
@@ -38,21 +38,14 @@ getMaxSpeed(userCar);
 console.log(userCar);
 
 // Задание 6
-function showUserCarInfo(userCar) {
-    console.log(Object.values(userCar));
-}
-
-showUserCarInfo(userCar);
-
-/* еслинужно передать одно значение то пишем так
 function showUserCarInfo(userCar, maxSpeed) {
     console.log(userCar[maxSpeed]);
 }
 
-showUserCarInfo(userCar, "maxSpeed");*/
+showUserCarInfo(userCar, "maxSpeed");
 
 // Задание 7
-const Top10SngGrapplers = [
+const top10SngGrapplers = [
     "Гаирбег Ибрагимов",
     "Руслан Абдулаев",
     "Зайнудин Зайнуков",
@@ -65,7 +58,7 @@ const Top10SngGrapplers = [
     "Мажид Курахов",
 ];
 
-console.log(Top10SngGrapplers);
+console.log(top10SngGrapplers);
 
 // Задание 8
 
