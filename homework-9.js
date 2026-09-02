@@ -57,9 +57,32 @@ const userComentsList = userComments.map((coment) => {
 console.log(userComentsList);
 //задание 10
 
-const reviseduserComentsList = userComments.map(coment => {
-    if (coment.body.length > 180) { coment.isInvalid = true } else { coment.isInvalid = false } return coment ;} )
+const reviseduserComentsList = userComments.map((coment) => {
+    if (coment.body.length > 180) {
+        coment.isInvalid = true;
+    } else {
+        coment.isInvalid = false;
+    }
+    return coment;
+});
 
-console.log(reviseduserComentsList)
+console.log(reviseduserComentsList);
 //задание 11
 
+const arrayMailDomen = userComments.map((comment) => {
+    return comment.email;
+});
+
+console.log(arrayMailDomen);
+
+const arrayMailDomen1 = userComments.reduce((acc, comment) => {
+    acc.push(comment.email);
+    return acc;
+}, []);
+
+console.log(arrayMailDomen1);
+//задание 12
+
+const MailDomenList = arrayMailDomen.join(" | ");
+
+console.log(MailDomenList);
