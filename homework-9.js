@@ -1,4 +1,7 @@
 // Константы
+
+import { userComments } from "./comments.js";
+
 const numbersList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const mangasList = [
@@ -11,36 +14,44 @@ const mangasList = [
     "Monster",
     "Hunter x Hunter",
 ];
-
 // задание № 2
-const shortenedListNumbers = numbersList.filter(
-    (number) => number >= 1 && number <= 5,
-);
 
-console.log(shortenedListNumbers);
+const filterNumberList = (numbersList) => {
+    if (
+        !Array.isArray(numbersList) ||
+        numbersList.some(
+            (number) => typeof number !== "number" || Number.isNaN(number),
+        )
+    ) {
+        return "Некорректные входные данные";
+    }
+    return numbersList.filter((number) => number >= 1 && number <= 5);
+};
+
+console.log(filterNumberList(numbersList));
+
 // задание № 3
 
-// console.log(mangasList)
+const hasMonster = mangasList.includes("Monster");
 
-const newMangaList = mangasList.includes("Monster");
+console.log(hasMonster);
 
-console.log(newMangaList);
 // задание № 4
-const reverseMangasList = (mangasList) => {
+
+const reversedMangas = (mangasList) => {
     return mangasList.reverse();
 };
 
-console.log(reverseMangasList(mangasList));
+console.log(reversedMangas(mangasList));
 
-// задание 6
-import { userComments } from "./comments.js";
-console.log(userComments);
 //задание 7
+
 const filteredUserСomments = userComments.filter((user) =>
     user.email.includes(".com"),
 );
 
 console.log(filteredUserСomments);
+
 //задание 8
 
 const newUserComentsList = userComments.map((coment) => {
@@ -49,12 +60,15 @@ const newUserComentsList = userComments.map((coment) => {
 });
 
 console.log(newUserComentsList);
+
 //задание 9
+
 const userComentsList = userComments.map((coment) => {
     return { id: coment.id, name: coment.name };
 });
 
 console.log(userComentsList);
+
 //задание 10
 
 const reviseduserComentsList = userComments.map((coment) => {
@@ -67,22 +81,24 @@ const reviseduserComentsList = userComments.map((coment) => {
 });
 
 console.log(reviseduserComentsList);
+
 //задание 11
 
-const arrayMailDomen = userComments.map((comment) => {
+const emailList = userComments.map((comment) => {
     return comment.email;
 });
 
-console.log(arrayMailDomen);
+console.log(emailList);
 
-const arrayMailDomen1 = userComments.reduce((acc, comment) => {
+const emailListReduce = userComments.reduce((acc, comment) => {
     acc.push(comment.email);
     return acc;
 }, []);
 
-console.log(arrayMailDomen1);
+console.log(emailListReduce);
+
 //задание 12
 
-const MailDomenList = arrayMailDomen.join(" | ");
+const emailsString = emailListReduce.join(" | ");
 
-console.log(MailDomenList);
+console.log(emailsString);
