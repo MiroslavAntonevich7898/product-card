@@ -2,6 +2,15 @@
 
 import { userComments } from "./comments.js";
 
+function isValidArray(data, expectedType) {
+    if (!Array.isArray(data)) {
+        return false;
+    }
+    return !data.some(
+        (item) => typeof item !== expectedType || Number.isNaN(item),
+    );
+}
+
 const numbersList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const mangasList = [
@@ -14,16 +23,12 @@ const mangasList = [
     "Monster",
     "Hunter x Hunter",
 ];
+
 // задание № 2
 
 const filterNumberList = (numbersList) => {
-    if (
-        !Array.isArray(numbersList) ||
-        numbersList.some(
-            (number) => typeof number !== "number" || Number.isNaN(number),
-        )
-    ) {
-        return "Некорректные входные данные";
+    if (!isValidArray(numbersList, "number")) {
+        return "Некорректные входные параметры";
     }
     return numbersList.filter((number) => number >= 1 && number <= 5);
 };
@@ -32,34 +37,42 @@ console.log(filterNumberList(numbersList));
 
 // задание № 3
 
-const hasMonster = mangasList.includes("Monster");
+function hasManga(manga) {
+    if (typeof manga !== "string") {
+        return "Некорректные входные параметры";
+    }
+    return mangasList.includes(manga);
+}
 
-console.log(hasMonster);
+console.log(hasManga("Monster"));
 
 // задание № 4
 
-const reversedMangas = (mangasList) => {
-    return mangasList.reverse();
-};
+const reverseMangasList = (mangasList) => mangasList.reverse();
 
-console.log(reversedMangas(mangasList));
+console.log(reverseMangasList(mangasList));
 
 //задание 7
 
-const filteredUserСomments = userComments.filter((user) =>
+const filteredUserComments = userComments.filter((user) =>
     user.email.includes(".com"),
 );
 
-console.log(filteredUserСomments);
+console.log(filteredUserComments);
 
 //задание 8
 
-const newUserComentsList = userComments.map((coment) => {
-    coment.id <= 5 ? (coment.postId = 2) : (coment.postId = 1);
-    return coment;
-});
+const newComentsList = (coments) => {
+    if (!isValidArray(coments, "object")) {
+        return "Некоректные входные данные";
+    }
+    return coments.map((coment) => {
+        coment.postId = coment.id <= 5 ? 2 : 1;
+        return coment;
+    });
+};
 
-console.log(newUserComentsList);
+console.log(newComentsList(userComments));
 
 //задание 9
 
