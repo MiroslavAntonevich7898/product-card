@@ -48,9 +48,9 @@ console.log(hasManga("Monster"));
 
 // задание № 4
 
-const reverseMangasList = (mangasList) => mangasList.reverse();
+const reverseMangaArray = (mangasList) => mangasList.reverse();
 
-console.log(reverseMangasList(mangasList));
+console.log(reverseMangaArray(mangasList));
 
 //задание 7
 
