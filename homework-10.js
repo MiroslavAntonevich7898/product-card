@@ -1,7 +1,7 @@
 import { productCards } from "./product-cards-hmw-10.js";
 
-const cardTemplate = document.getElementById("card__template");
 const cardContainer = document.querySelector(".product-catalog__container");
+const cardTemplate = document.getElementById("card__template");
 
 function createProductCard(product) {
     const cardClone = cardTemplate.content.cloneNode(true);
@@ -32,6 +32,35 @@ function createProductCard(product) {
     cardContainer.append(cardClone);
 }
 
-productCards.forEach((product) => {
-    createProductCard(product);
-});
+const abridgedProductCard = productCards.reduce((acc, product) => {
+    acc.push({
+        [product.title]: product.description,
+    });
+    return acc;
+}, []);
+
+console.log(abridgedProductCard);
+
+function getCardsCount() {
+    while (true) {
+        const value = prompt("Сколько карточек отобразить? От 1 до 5");
+        const number = Number(value);
+
+        if (number >= 1 && number <= 5) {
+            return number;
+        }
+        alert("Некоректные входные данные");
+    }
+}
+
+function renderCards(cards, number) {
+    const cardsToRender = cards.slice(0, number);
+
+    cardsToRender.forEach((product) => {
+        createProductCard(product);
+    });
+}
+
+const cardsCount = getCardsCount();
+
+renderCards(productCards, cardsCount);
