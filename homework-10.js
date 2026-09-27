@@ -1,5 +1,7 @@
 import { productCards } from "./product-cards-hmw-10.js";
 
+const IMG_PATH = "./img/photo_cards";
+
 const cardContainer = document.querySelector(".product-catalog__container");
 const cardTemplate = document.getElementById("card__template");
 
@@ -8,7 +10,7 @@ function createProductCard(product) {
 
     const image = cardClone.querySelector(".card__img");
 
-    image.src = product.img;
+    image.src = `${IMG_PATH}${product.img}`;
     image.alt = product.title;
 
     cardClone.querySelector(".card__properties").textContent = product.skinType;

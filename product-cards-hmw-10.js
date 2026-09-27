@@ -1,7 +1,7 @@
 export const productCards = [
     {
         id: 1,
-        img: "./img/photo_cards/moisturizing-mousse_1.jpg",
+        img: "/moisturizing-mousse_1.jpg",
         skinType: "для нормальной кожи",
         title: "Увлажняющий мусс",
         description:
@@ -15,7 +15,7 @@ export const productCards = [
     },
     {
         id: 2,
-        img: "./img/photo_cards/moisturizing-mask_2.jpg",
+        img: "/moisturizing-mask_2.jpg",
         skinType: "для нормальной кожи",
         title: "Увлажняющая маска",
         description: "Способствует удерживанию влаги в верхних слоях кожи",
@@ -24,7 +24,7 @@ export const productCards = [
     },
     {
         id: 3,
-        img: "./img/photo_cards/Face-Wash-Gel_3.jpg",
+        img: "/Face-Wash-Gel_3.jpg",
         skinType: "для нормальной кожи",
         title: "Гель для умывания",
         description: "Интенсивно очищает, не повреждает защитный барьер кожи",
@@ -37,7 +37,7 @@ export const productCards = [
     },
     {
         id: 4,
-        img: "./img/photo_cards/Gift-set-No.-1_4.jpg",
+        img: "/Gift-set-No.-1_4.jpg",
         skinType: "для нормальной кожи",
         title: "Подарочный набор №1",
         description: "Набор, состоящий из увлажняющего крема и маски",
@@ -46,7 +46,7 @@ export const productCards = [
     },
     {
         id: 5,
-        img: "./img/photo_cards/Gift-set-No.-5_5.jpg",
+        img: "/Gift-set-No.-5_5.jpg",
         skinType: "для нормальной кожи",
         title: "Подарочный набор №5",
         description:
