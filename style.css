@@ -1,128 +1,158 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.body {
-  justify-content: center;
-  flex-wrap: wrap;
-  display: flex;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .product-catalog {
-  font-family: "Montserrat", sans-serif;
-  color: #515076;
-  width: 1280px;
-  height: 1715px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-image: url("./img/background/background-dandelion_1.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 790px 697px;
-  background-position: 105px 0;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    color: #515076;
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-catalog__title::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+
+    width: 790px;
+    height: 500px;
+
+    background-image: url("./img/background/background-dandelion_1.jpg");
+    background-repeat: no-repeat;
+
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
 }
 
 .product-catalog__title {
-  width: 846px;
-  height: 78px;
-  font-size: 70px;
-  line-height: 78px;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 220px;
-  margin-bottom: 110px;
+    width: 100%;
+    max-width: 846px;
+
+    font-size: 70px;
+    line-height: 78px;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 110px;
+
+    position: relative;
 }
 
 .product-catalog__container {
-  width: 1110px;
-  height: 1191px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  gap: 20px;
+    width: 100%;
+    max-width: 1110px;
+    min-height: 1191px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
 }
 
 .card__img {
-  width: 290px;
-  height: 245px;
-  margin-bottom: 30px;
+    width: 290px;
+    height: 245px;
+    margin-bottom: 30px;
 }
 
 .card {
-  width: 340px;
-  height: 573px;
-  background-color: #5150761a;
-  transition: background-color 0.5s ease-out;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    min-height: 573px;
+    background-color: #5150761a;
+    transition: background-color 0.5s ease-out;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card.change-color {
-  background-color: #79e8c3;
+    background-color: #79e8c3;
 }
 
 .card__description {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .card__properties {
-  font-size: 12px;
-  line-height: 24px;
-  color: #a5a3b9;
-  margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #a5a3b9;
+    margin-bottom: 5px;
 }
 
 .card__title {
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 5px;
 }
 
 .card__text-description {
-  font-size: 13px;
-  line-height: 18px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .card__compound-list {
-  list-style-type: circle;
-  padding-left: 15px;
+    list-style-type: circle;
+    padding-left: 15px;
 }
 
 .card__compound {
-  font-size: 13px;
-  line-height: 18px;
-  margin-bottom: 40px;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0px;
 }
 
 .card__price {
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  justify-content: space-between;
+    margin-top: auto;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .button_container {
-  width: 1110px;
-  display: flex;
-  justify-content: space-around;
+    width: 1110px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .button {
-  border-width: 3px;
-  background-color: whitesmoke;
-  color: rgb(7, 133, 108);
-  border-radius: 40px;
-  font-weight: bold;
-  font-size: 25px;
-  width: 200px;
-  height: 120px;
-  margin-bottom: 50px;
+    border-width: 3px;
+    background-color: whitesmoke;
+    color: rgb(7, 133, 108);
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    min-height: 150px;
+    width: 100%;
+    flex-shrink: 0;
 }
