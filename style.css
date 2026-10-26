@@ -27,34 +27,37 @@ body {
     flex-wrap: wrap;
 }
 
+.product-catalog__title {
+    width: 100%;
+    max-width: 846px;
+    min-height: 78px;
+
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+    font-size: 70px;
+    line-height: 78px;
+    text-align: center;
+    vertical-align: middle;
+
+    position: relative;
+}
+
 .product-catalog__title::before {
     content: "";
     position: absolute;
     z-index: -1;
     background-size: contain;
 
-    width: 790px;
-    height: 500px;
+    width: 1290px;
+    height: 800px;
 
     background-image: url("./img/background/background-dandelion_1.jpg");
     background-repeat: no-repeat;
 
-    left: 50%;
+    left: 62%;
     top: -150px;
     transform: translateX(-50%);
-}
-
-.product-catalog__title {
-    width: 100%;
-    max-width: 846px;
-
-    font-size: 70px;
-    line-height: 78px;
-    text-align: center;
-    vertical-align: middle;
-    margin-bottom: 110px;
-
-    position: relative;
 }
 
 .product-catalog__container {
@@ -67,12 +70,6 @@ body {
     align-items: center;
     align-content: center;
     gap: 20px;
-}
-
-.card__img {
-    width: 290px;
-    height: 245px;
-    margin-bottom: 30px;
 }
 
 .card {
@@ -90,8 +87,10 @@ body {
     background-color: #79e8c3;
 }
 
-.card__description {
-    margin-bottom: 15px;
+.card__img {
+    width: 290px;
+    height: 245px;
+    margin-bottom: 30px;
 }
 
 .card__properties {
@@ -105,6 +104,10 @@ body {
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 5px;
+}
+
+.card__description {
+    margin-bottom: 15px;
 }
 
 .card__text-description {
@@ -149,10 +152,67 @@ body {
     margin-bottom: 50px;
 }
 
+.registration_trigger {
+    border-width: 3px;
+    background-color: whitesmoke;
+    color: rgb(7, 133, 108);
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
 footer {
     background-color: #3a3a3a;
     color: #ffffff;
-    min-height: 150px;
+    min-height: 250px;
     width: 100%;
+    /* min-width: 1728px; */
+    min-height: 477px;
     flex-shrink: 0;
+    font-family: "Montserrat";
+} 
+
+.footer__container {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+    margin-bottom: 50px;
 }
+
+.subscribe__button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+

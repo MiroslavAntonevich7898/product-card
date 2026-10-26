@@ -10,7 +10,11 @@
     <body class="body">
         <main class="product-catalog">
             <h1 class="product-catalog__title">Выбери свой продукт</h1>
-
+            <form>
+                <button class="registration_trigger" tupe="button">
+                    Регистрация
+                </button>
+            </form>
             <div class="button_container">
                 <button class="button" id="repaint-first-card-button">
                     Изменить цвет 1 карточки
@@ -50,12 +54,50 @@
                     </article>
                 </template>
             </div>
-            <form>
-                <input tupe="tel" />
-            </form>
         </main>
         <footer>
-            <a href="www.product-cards.com©all right reserve">www.product-cards.com©all right reserve</a>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <b>Product Cards</b>
+                    <p>У нас самые лучшие продукты для кожи!</p>
+                    <div class="footer__social-links">
+                    <image>
+                        
+                    </image>
+                    </div>
+                </div>
+
+                
+
+                <form class="subscribe__button">
+                    <label for="email"> Подпишись на наши акции: </label>
+                    <div>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                    
+                            required
+                        />
+                        <button type="submit">Подписаться</button>
+                    </div>
+                </form>
+
+                <nav class="footer__navigation">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer__quick-links">
+                        <li>Главная</li>
+                        <li>Магазин</li>
+                        <li>Контакты</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__link">
+                <p>_______</p>
+            <p href="www.product-cards.com©all right reserve"
+                >www.product-cards.com©all right reserve</p
+            >
+            </div>
         </footer>
         <script type="module" src="./homework-11.js"></script>
         <!-- <script type="module" src="./homework-10.js"></script> -->
