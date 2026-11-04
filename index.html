@@ -11,7 +11,7 @@
         <main class="product-catalog">
             <h1 class="product-catalog__title">Выбери свой продукт</h1>
             <form>
-                <button class="registration_trigger" tupe="button">
+                <button class="registration_trigger" type="button">
                     Регистрация
                 </button>
             </form>
@@ -61,25 +61,28 @@
                     <b>Product Cards</b>
                     <p>У нас самые лучшие продукты для кожи!</p>
                     <div class="footer__social-links">
-                    <image>
-                        
-                    </image>
+                 <img
+                 src="/img/social_icons/TG.svg"
+                 alt="Телеграм">
+                 <img class="social-links"
+                 src="/img/social_icons/VK.svg"
+                 alt="Вконтакте">
                     </div>
                 </div>
 
                 
 
-                <form class="subscribe__button">
+                <form class="subscribe__form">
                     <label for="email"> Подпишись на наши акции: </label>
-                    <div>
-                        <input
+                    <div class="subscribe__button">
+                        <input class="footer__subscribe-button"
                             type="email"
                             id="email"
                             name="email"
-                    
+                            placeholder="Введи Email..."
                             required
                         />
-                        <button type="submit">Подписаться</button>
+                        <button class="footer__subscribe-button" type="submit">Подписаться</button>
                     </div>
                 </form>
 
@@ -93,10 +96,8 @@
                 </nav>
             </div>
             <div class="footer__link">
-                <p>_______</p>
-            <p href="www.product-cards.com©all right reserve"
-                >www.product-cards.com©all right reserve</p
-            >
+            <div class="footer__line-element"></div>
+            <p>www.product-cards.com©all right reserve</p>
             </div>
         </footer>
         <script type="module" src="./homework-11.js"></script>

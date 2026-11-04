@@ -173,31 +173,64 @@ footer {
     min-height: 477px;
     flex-shrink: 0;
     font-family: "Montserrat";
+
 } 
 
 .footer__container {
      display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 
-    max-width: 1280px;
+    max-width: 1110px;
     width: 100%;
     margin: 0 auto;
     padding-top: 70px;
     margin-bottom: 50px;
 }
 
-.subscribe__button {
+.subscribe__form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    flex: 1;
+}
+
+.subscribe__button {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: #ffffff;
+border-radius: 8px;
+width: 477px;
+height: 52px;
+font-size: 18px;
+}
+
+.footer__subscribe-button {
+    border: none;
+    background: transparent;
+    min-height: 52px;
+}
+
+.subscribe__button input {
+    flex: 1;
+    min-width: 0;
+    padding-left: 15px;
+    outline: none;
+}
+.subscribe__button button {
+    border-left: 1px solid #000;
+    padding-left: 5px;
 }
 
 .footer__navigation {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 20px;
+    flex:1;
 }
 
 .footer__quick-links {
@@ -211,8 +244,21 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
+}
+
+.footer__line-element{
+    width: 66px;
+    border-top: 2px solid #ffffff;
 
 }
 
+.footer__social-links {
+    display: flex;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.footer__info {
+    flex: 1;
+}
